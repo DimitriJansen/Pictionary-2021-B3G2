@@ -1,0 +1,23 @@
+{
+  "name": "pictionary-2021-b3g2",
+  "version": "0.0.1",
+  "description": "Exercice for school",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimitriJansen/Pictionary-2021-B3G2.git"
+  },
+  "author": "DimitriJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimitriJansen/Pictionary-2021-B3G2/issues"
+  },
+  "homepage": "https://github.com/DimitriJansen/Pictionary-2021-B3G2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^3.1.2"
+  }
+}
