@@ -20,7 +20,7 @@ const io = socketIO(server);
 let users = [];
 let currentPlayer = null;
 let timeout = null;
-const words = [pikachu, carapuce, salamèche];
+const words = ["pikachu", "carapuce", "salamèche"];
 
 io.on("connection", (socket) => {
     socket.on("username", (username) => {
