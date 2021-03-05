@@ -30,6 +30,11 @@ io.on("connection", (socket) => {
 
         users.push(socket);
         sendUsers();
+
+        if (users.length === 1) {
+            currentPlayer = socket;
+            switchPlayer();
+        }
     });
 
     socket.on("disconnect", () => {
@@ -38,9 +43,8 @@ io.on("connection", (socket) => {
         });
         sendUsers();
 
-        if (users.length === 1) {
-            currentPlayer = socket;
-            switchPlayer();
+        if (users.length === 0) {
+            timeout = clearTimeout(timeout);
         }
     });
 
